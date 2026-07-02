@@ -1,1 +1,51 @@
 @import "tailwindcss";
+
+@font-face { 
+    font-family: "CrimsonRegular";
+    src: url("./fonts/CrimsonText-Regular.woff2") format("woff2"); 
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DMSansRegular";
+    src: url("./fonts/DMSans-Regular.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DMSansBold";
+    src: url("./fonts/DMSans-Bold.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@theme { 
+    --color-green-600: #485C11; 
+    --color-green-400: #8E9C78; 
+    --color-green-100: #DFECC6; 
+    --color-gray-100: #E9E9E9; 
+    --color-gray-500: #929292;
+    --color-custom-black: #121212; 
+
+    --font-dmsans-regular: "DMSansRegular"; 
+    --font-dmsans-bold: "DMSansBold";
+    --font-crimson-regular: "CrimsonRegular"; 
+
+    --animate-link1: slide-right 250ms ease-out; 
+    --animate-link2: slide-right 350ms ease-out; 
+    --animate-link3: slide-right 450ms ease-out; 
+    --animate-link4: slide-right 550ms ease-out; 
+
+    @keyframes slide-right { 
+        0% {transform: translateX(-100px);
+        opacity: 0}
+        100%{transform: translateX(0);
+        opacity: 100}
+    }
+
+}   
+
+
