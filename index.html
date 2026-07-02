@@ -4,12 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main</title>
-    <script type="module" crossorigin src="/modern-product-lunch/assets/index-BEblDxNb.js"></script>
-    <link rel="stylesheet" crossorigin href="/modern-product-lunch/assets/index-D5P6U6M-.css">
+    <script type="module" crossorigin src="/modern-product-lunch/assets/index-DXcLq_7N.js"></script>
+    <link rel="stylesheet" crossorigin href="/modern-product-lunch/assets/index-E6kibAXU.css">
   </head>
-  <body>
-    <h1 class="text-6xl text-blue-400">
-      Hello tailwindcss
-    </h1>
+  <body class="">
+    <header class="max-w-[1600px] mx-auto max-md:sticky max-md:top-0 z-20 max-md:bg-white">
+      <nav id="navBar" class="group px-6 py-8 flex flex-col md:flex-row items-center md:justify-between rounded-b-3xl max-md:shadow-sm">
+        <div class="flex justify-between w-full md:w-auto">
+          <p class="font-dmsans-regular text-2xl cursor-pointer">Modern</p >
+          <div id="hamMenu" class="flex flex-col justify-center gap-1 md:hidden">
+            <span class="bg-custom-black w-5 h-0.5 inline-block"></span>
+            <span class="bg-custom-black w-5 h-0.5 inline-block"></span>
+            <span class="bg-custom-black w-5 h-0.5 inline-block"></span>
+          </div>
+        </div>
+        <div class="w-full z-10 md:fixed md:left-2/4 md:bg-white/30 md:p-3 md:rounded-full md:-translate-x-3/6 md:w-auto md:w-max max-md:grid grid-rows-[0fr] group-[.clicked]:grid-rows-[1fr] duration-400 ease-out">
+          <ul class="overflow-hidden md:opacity-100 md:flex-row md:py-0 pointer-events-none md:pointer-events-auto group-[.clicked]:pointer-events-auto opacity-0 flex flex-col group-[.clicked]:opacity-100 group-[.clicked]:py-5 font-dmsans-bold self-start w-full gap-6 max-md:*:border-b max-md:*:border-b-gray-100 max-md:*:py-3">
+            <li class="group-[.clicked]:animate-link1 cursor-pointer hover:text-gray-500">Benefits</li>
+            <li class="group-[.clicked]:animate-link2 cursor-pointer hover:text-gray-500">Specifications</li>
+            <li class="group-[.clicked]:animate-link3 cursor-pointer hover:text-gray-500">How-to</li>
+            <li class="group-[.clicked]:animate-link4 cursor-pointer hover:text-gray-500">Contact-Us</li>
+          </ul>
+        </div>
+        <button class="group/button md:flex text-white cursor-pointer hidden group-[.clicked]:flex gap-2 font-dmsans-bold px-5 py-3 rounded-full self-start text-sm bg-green-600">
+          Learn more
+          <svg width="7" height="20" viewBox="0 0 7 20" fill="none" class="group-hover/button:-translate-y-1 group-hover/button:translate-x-[2px]  transition-all" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.01037 11.9877V8.04618L5.64939 8.08576L0.735155 13.0056L0 12.2705L4.91423 7.35626L4.96513 7.99528H1.0066V6.99434L6 7.00565V11.9877H5.01037Z" fill="white"/>  
+          </svg>
+        </button>
+      </nav>
+    </header>  
+    <main class="">
+      <section class="max-w-[1600px] mx-auto py-2">
+        <h1 class="font-crimson-regular md:text-[160px] sm:text-9xl text-6xl text-center">Browse Everything</h1>
+        <picture class="flex justify-center py-2">
+          <source media="(min-width:1000px)" srcset="/modern-product-lunch/assets/Desktop-Hero-DFbC-ixQ.png">
+          <source media="(min-width:675px)" srcset="/modern-product-lunch/assets/Tablet-Hero-C7Mf5tY1.png">
+          <img src="/modern-product-lunch/assets/Mobile-Hero-SgOoVi16.png" alt="">
+        </picture>
+      </section>
+    </main>
   </body>
 </html>
