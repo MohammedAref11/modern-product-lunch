@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview", 
     "predeploy": "npm run build", 
-    "deploy": "gh-pages -d dist -m \"added assets like images, icons and fonts\""
+    "deploy": "gh-pages -d dist -m \"added micro interactions animatios for hero section and nav bar\""
   },
   "devDependencies": {
     "vite": "^8.1.1"

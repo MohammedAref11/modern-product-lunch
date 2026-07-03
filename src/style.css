@@ -21,6 +21,10 @@
     font-style: normal;
 }
 
+html { 
+    interpolate-size: allow-keywords;
+}
+
 @theme { 
     --color-green-600: #485C11; 
     --color-green-400: #8E9C78; 
@@ -33,10 +37,10 @@
     --font-dmsans-bold: "DMSansBold";
     --font-crimson-regular: "CrimsonRegular"; 
 
-    --animate-link1: slide-right 250ms ease-out; 
-    --animate-link2: slide-right 350ms ease-out; 
-    --animate-link3: slide-right 450ms ease-out; 
-    --animate-link4: slide-right 550ms ease-out; 
+    --animate-link1: slide-right 350ms ease-out; 
+    --animate-link2: slide-right 400ms ease-out; 
+    --animate-link3: slide-right 550ms ease-out; 
+    --animate-link4: slide-right 650ms ease-out; 
 
     @keyframes slide-right { 
         0% {transform: translateX(-150px);
