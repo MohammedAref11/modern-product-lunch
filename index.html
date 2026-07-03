@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>main</title>
-    <script type="module" crossorigin src="/modern-product-lunch/assets/index-BkpNPnie.js"></script>
-    <link rel="stylesheet" crossorigin href="/modern-product-lunch/assets/index-C9JC1d9-.css">
+    <script type="module" crossorigin src="/modern-product-lunch/assets/index-C9WV3CPp.js"></script>
+    <link rel="stylesheet" crossorigin href="/modern-product-lunch/assets/index-DfsZDnaN.css">
   </head>
   <body class="">
-    <header class="max-w-[1600px] mx-auto max-md:sticky max-md:top-0 z-20 max-md:bg-white">
-      <nav id="navBar" class="group px-6 py-8 flex flex-col md:flex-row items-center md:justify-between rounded-b-3xl max-md:shadow-sm">
+    <header class="md:relative max-w-[1600px] mx-auto max-md:sticky max-md:top-0 z-20 max-md:bg-white">
+      <nav id="navBar" class="group px-6 py-5 flex flex-col md:flex-row items-center md:justify-between rounded-b-3xl max-md:shadow-sm">
         <div class="flex justify-between w-full md:w-auto">
           <p class="font-dmsans-regular text-2xl cursor-pointer">Modern</p >
           <div id="hamMenu" class="flex flex-col justify-center gap-1 md:hidden">
@@ -18,13 +18,13 @@
             <span class="bg-custom-black w-5 h-0.5 inline-block group-[.clicked]:-rotate-45 duration-200"></span>
           </div>
         </div>
-        <div class="w-full z-10 md:fixed md:left-2/4 md:bg-white/30 md:p-3 md:rounded-full md:-translate-x-3/6 md:w-auto max-md:grid grid-rows-[0fr] group-[.clicked]:grid-rows-[1fr] duration-400 ease-out">
-          <ul class="overflow-hidden md:opacity-100 md:flex-row md:py-0 pointer-events-none md:pointer-events-auto group-[.clicked]:pointer-events-auto opacity-0 flex flex-col group-[.clicked]:opacity-100 group-[.clicked]:py-5 font-dmsans-bold self-start w-full gap-6 max-md:*:border-b max-md:*:border-b-gray-100 max-md:*:py-3">
-            <li class="group-[.clicked]:animate-link1 cursor-pointer hover:text-gray-500">Benefits</li>
-            <li class="group-[.clicked]:animate-link2 cursor-pointer hover:text-gray-500">Specifications</li>
-            <li class="group-[.clicked]:animate-link3 cursor-pointer hover:text-gray-500">How-to</li>
-            <li class="group-[.clicked]:animate-link4 cursor-pointer hover:text-gray-500">Contact-Us</li>
-          </ul>
+        <div id="navMenu" class="w-full h-auto overflow-hidden max-md:h-0 duration-600 ease-out transition-[height] z-10 md:fixed md:left-2/4 md:pointer-events-auto pointer-events-none group-[.clicked]:pointer-events-auto md:bg-white/40 md:p-3 md:rounded-full md:-translate-x-3/6 md:w-auto">
+          <ul class="md:flex-row flex flex-col max-md:py-5 p-2 font-dmsans-bold w-full md:text-sm gap-4 max-md:*:border-b max-md:*:border-b-gray-100 max-md:*:py-3">
+            <li class="group-[.clicked]:animate-link1 cursor-pointer hover:text-gray-600">Benefits</li>
+            <li class="group-[.clicked]:animate-link2 cursor-pointer hover:text-gray-600">Specifications</li>
+            <li class="group-[.clicked]:animate-link3 cursor-pointer hover:text-gray-600">How-to</li>
+            <li class="group-[.clicked]:animate-link4 cursor-pointer hover:text-gray-600">Contact-Us</li>
+          </ul> 
         </div>
         <button class="group/button md:flex text-white cursor-pointer hover:bg-green-400 hidden group-[.clicked]:flex gap-2 font-dmsans-bold px-5 py-3 rounded-full self-start text-sm bg-green-600">
           Learn more
@@ -38,13 +38,13 @@
       <section class="max-w-[1600px] mx-auto p-8">
         <h1 class="font-crimson-regular md:text-[130px] sm:text-9xl text-6xl text-center">Browse Everything</h1>
         <picture class="flex justify-center py-2">
-          <source media="(min-width:1000px)" srcset="/modern-product-lunch/assets/Desktop-Hero-2Uf1heqs.webp">
-          <source media="(min-width:600px)" srcset="/modern-product-lunch/assets/Tablet-Hero-M06POjw0.webp">
-          <img fetchpriority="high" src="/modern-product-lunch/assets/Mobile-Hero-DAPsIMsy.webp" alt="">
+          <source media="(min-width:1000px)" srcset="/modern-product-lunch/assets/Desktop-Hero-2Uf1heqs.webp" width="1000" height="600">
+          <source media="(min-width:600px)" srcset="/modern-product-lunch/assets/Tablet-Hero-M06POjw0.webp" width="700" height="440">
+          <img fetchpriority="high" src="/modern-product-lunch/assets/Mobile-Hero-DAPsIMsy.webp" alt="" width="300" height="500">
         </picture>
       </section>
 
-      <section class="max-w-[1600px] mx-auto p-8">
+      <section class="max-w-[1600px] mx-auto px-8 py-5 border-b border-b-gray-200 ">
         <p class="font-dmsans-regular text-gray-500 py-3">Trusted By:</p>
         <div class="flex flex-wrap justify-around w-full gap-2">
           <img class="p-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAAAsCAYAAAC5Wez6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABw9JREFUeAHVnFtPVFcUxxeX6Qyg5TKSeC2JNbVNrGDVXlMVo7HlMuIFmvhgYkwf9SsYv4JJH3yyL9oKcrN0ItqKYlrTSrWp1V6NBStUVEAQhOHW37KQqGkizFnnzJlfcnLO4WGz9/rvtfbalzMpkgTU1dWFx8fHi1JSUjrC4fDN4uLiMYmTQ4cOBRctWpSfmpo6b2JiIiBGUN4E9XtIPQeDweDgpUuXBg4ePBh3PWdLivichoaGJRipAgOtmJycvNnb2/vJ3r17ByQOotFocGRkpIzHIsrKx/Cm7ae4UTpHH2V3pqWl3eD9x0gk0s19UlwmXXxMbW3tAm47EfHVqT/l5+XlpUkcqCcODQ2Vpaenb8TQ6cYaPoZyA5SrHSSf1+WIupZo0spzq7iMb4VExAJ6dRXGWSYOOXLkSA6UY+C3VUTxAP5PiJtGk49Onjy5dHh4+FRlZeUdt7zTl0JWV1fnWYk4FU5VxLe8EvEZ0tUziQQBhoka3vvEBVLFZzQ3N2fR6HILEafD6ZQnmiU2s0U7ENcqHsvEJXwlZH19fc7g4GAJhi8Sh+DVcwoKCjbh2e8kyBOfghCrY/sq2vjmgQMHzO3uGyEx/As0djMibuA1UxyAodIp6z1C2mZe54p/mEP71hcWFs4TY3whpIqI52zG8OvE4biN96VhqHWU9yGvGeI/ChDzdWuvTLiQJABz8Z4tXMW8viAO0A5Bur8WQ20Sf4r4eIpCW1esXr06JIYkdOxQw+OFG/EeNbxjEWEVIkYoMyw+hvq9Qj1zeBwSIxLmkdPhdMp7HImoIOIabhV+F3GKdOaVL4khCfFIJsiZrNas59FxOG1rawt0dnYWIaBOWfIkSQiFQgvEEM89UueJsVjsfR63iMOM8vDhw4Gurq41dIptySSiQsd7UQzx3CMJKVsIqZqdOk5GFi9eXEinKOcxGcLpUzCkOJpiPYtnQuqYSOXfpSeqNzoScTqcIuI2SUIRFewwLIZ4JiQirmHprUQcTvaVjo6O5ZSXtCIqDAW9YognQjY1Na1gHCujF2aLQwKBwMtjY2MfYIikFVGhU3eLIa4LeeLEiaUYvtLI8HcZY3MxwnU88rq4Sxp11sxS90Kt7fSI+t8QQ1wVkgViXfyushCRMv4JBoOflZaWtouHsC+6jpWYnTwGxQja8kd7e7vpdpZr0w+Sm2VW4xgN78ELq0tKSjrEY8iwr/D//xIjKGuQjvHdvn37YmKIK0KyIx9iLNNxbL7YcKa8vPy6F2dfnqW/v38Cww+KEdikgzJ/sW6LuZC6qp+dnb2Bir4mRjDGXk2EiEpWVpaetlsuBlDOfZK+xt27d5t1jGnMhVy5cuVCjL7WcjMX7zZdl5wpDA/z+d8R2pMlzolRVrSqquqmuICpkIinR9OW0vCFYgjlFkejUdMlredx9OjRXBVRj2GKQ6aOSZ5neLgoLmF6JrClpSXU09Pzse63iT0PMIam7CPiMoTyAd0T43GDOIQ6x+iIjeFw+JyTg9XPw3T60dfXF0LEJeIO2ZT9hrjPAzLkOsRcyF0cEsMbm/HqVjdFVExD6+joaIiK++mMzGwZwXvOYvjL4pDpcEqHOM24aDrV+D9MhSQaZWMI3x2xnAkYfpi6n8MLW3t7e51myGOIeDEjI8MTERXrZMeX52SeByFbjX0B72mMRCJOj19oCL1Mh6hnAaNfPMJ0jETIITe+qXATDYEI+L16T0VFxbg4Y4zyWhHxdFlZmdl5nJlgeyQvNfUhYiZk4h4PVHWU27eI2GjgPZrYtBFSv0JE0y2qmWA9Rj6kMXclCdBpAbeL7G3WWoRAOsUVNrobt2/ffl8SgKmQhCgd5P8W/6MingmFQl/s37/f8bwUEa/R9AYSmx5JEKZCsnLxiNvP4sGkPV7oaDp2fc2ct8WpJ2poVhG56hIpomIqpC5sMwfTL3Vviz/RZORCTk7OqXi/en4SOsU1trmO79ixI+FRyHzOV1lZ2U0P/Un+S8N9BfW6kJubG2WVxeLg0++sxdZt3br1jvgAcyHp8RP00vPcfxP/ECOjbuN+1qmI0+EUbzzuFxEVV1ZhdFJNBvslYiZ03JgGw/+q+4BklI4PPOkvi+iY6Idw+iSuLacxN2un0U3i0qfWs+AW2Wm1hYjQzXqy70RUXBNSV/vZ0vpBQxCvXZIYbuE9etbH8dyWcu7i1TVkp3+KD3H1FN2ePXt0PLp87Nix25mZmZv0Z1YYP/O8+BRcwylXjYX3UM49hor60tLSq+JTPNmp2LVr1x1WPWpIOD7ltYVLz6TqCojTtc2n0ERLy8Xw33B9Hq+IZLaasA1Qnmbe+oNHdYh4JVHnhmaC5yvc+nMphNtMVkL0e/ogXmrWmZgO6Dx2mE5zjxD4SOJEj6zU1NTkBoPBAjpfN2unnX4WUfkXLmVQKD5EHGUAAAAASUVORK5CYII=" alt="">
@@ -56,8 +56,10 @@
         </div>
       </section>
 
-      <section class="max-w-[1600px] mx-auto p-8">
-        
+      <section class="max-w-[1600px] mx-auto px-8 py-16">
+        <p class="font-dmsans-regular text-sm text-green-600">Benefits:</p>
+        <h2 class="py-8 font-crimson-regular text-5xl md:text-7xl lg:text-8xl">We’ve cracked the code.</h2>
+        <p class="text-gray-500">Area provides real insights, without the data overload.</p>
       </section>
 
 
