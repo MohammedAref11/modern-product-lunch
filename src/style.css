@@ -21,7 +21,6 @@
     font-style: normal;
 }
 
-
 @theme { 
     --color-green-600: #485C11; 
     --color-green-400: #8E9C78; 
@@ -40,12 +39,11 @@
     --animate-link4: slide-right 550ms ease-out; 
 
     @keyframes slide-right { 
-        0% {transform: translateX(-100px);
+        0% {transform: translateX(-150px);
         opacity: 0}
         100%{transform: translateX(0);
         opacity: 100}
     }
-
 }   
 
 
