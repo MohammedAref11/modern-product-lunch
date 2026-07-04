@@ -21,10 +21,6 @@
     font-style: normal;
 }
 
-html { 
-    interpolate-size: allow-keywords;
-}
-
 @theme { 
     --color-green-600: #485C11; 
     --color-green-400: #8E9C78; 

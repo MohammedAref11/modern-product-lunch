@@ -17,8 +17,8 @@
             <span class="bg-custom-black w-5 h-0.5 inline-block group-[.clicked]:-rotate-45 duration-200"></span>
           </div>
         </div>
-        <div id="navMenu" class="w-full h-auto overflow-hidden max-md:h-0 duration-600 ease-out transition-[height] z-10 md:fixed md:left-2/4 md:pointer-events-auto pointer-events-none group-[.clicked]:pointer-events-auto md:bg-white/40 md:p-3 md:rounded-full md:-translate-x-3/6 md:w-auto">
-          <ul class="md:flex-row flex flex-col max-md:py-5 p-2 font-dmsans-bold w-full md:text-sm gap-4 max-md:*:border-b max-md:*:border-b-gray-100 max-md:*:py-3">
+        <div id="navMenu" class="w-full h-auto overflow-hidden max-md:h-0 duration-500 ease-out transition-[height] z-10 md:fixed md:left-2/4 md:bg-white/40 md:p-3 md:rounded-full md:-translate-x-3/6 md:w-auto">
+          <ul class="flex md:flex-row flex-col w-full max-md:py-5 p-2 font-dmsans-bold md:text-sm gap-4 max-md:*:border-b max-md:*:border-b-gray-100 max-md:*:py-3">
             <li class="group-[.clicked]:animate-link1 cursor-pointer hover:text-gray-600">Benefits</li>
             <li class="group-[.clicked]:animate-link2 cursor-pointer hover:text-gray-600">Specifications</li>
             <li class="group-[.clicked]:animate-link3 cursor-pointer hover:text-gray-600">How-to</li>
@@ -33,8 +33,9 @@
         </button>
       </nav>
     </header>  
-    <main>
-      <section class="max-w-[1600px] mx-auto p-8">
+    <main class="max-w-[1600px] mx-auto">
+
+      <section class="p-8">
         <h1 class="font-crimson-regular md:text-[130px] sm:text-9xl text-6xl text-center">Browse Everything</h1>
         <picture class="flex justify-center py-2">
           <source media="(min-width:1000px)" srcset="./assets/Desktop-Hero.webp" width="1000" height="600">
@@ -43,7 +44,7 @@
         </picture>
       </section>
 
-      <section class="max-w-[1600px] mx-auto px-8 py-5 border-b border-b-gray-200 ">
+      <section id="benefits" class="px-8 py-4 border-b border-b-gray-200 ">
         <p class="font-dmsans-regular text-gray-500 py-3">Trusted By:</p>
         <div class="flex flex-wrap justify-around w-full gap-2">
           <img class="p-4" src="./assets/Logo-1.png" alt="">
@@ -55,12 +56,48 @@
         </div>
       </section>
 
-      <section class="max-w-[1600px] mx-auto px-8 py-16">
+      <section class="px-8 py-12">
         <p class="font-dmsans-regular text-sm text-green-600">Benefits:</p>
         <h2 class="py-8 font-crimson-regular text-5xl md:text-7xl lg:text-8xl">We’ve cracked the code.</h2>
         <p class="text-gray-500">Area provides real insights, without the data overload.</p>
       </section>
 
+      <section class="px-8 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 *:py-4 *:border-t *:border-t-gray-100">
+          <article class="space-y-3.5">
+            <img src="./assets/Cable icon.svg" alt="Cable icon">
+            <h3 class="font-crimson-regular text-lg">Amplify Insights</h3>
+            <p class="font-dmsans-regular text-gray-500">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth.</p>
+          </article>
+          <article class="space-y-3.5">
+            <img src="./assets/Earth icon.svg" alt="Cable icon">
+            <h3 class="font-crimson-regular text-lg">Control Your global Presence</h3>
+            <p class="font-dmsans-regular text-gray-500">Manage and track satellite offices, ensuring consistent performance and streamlined operations everywhere.</p>
+          </article>
+          <article class="space-y-3.5">
+            <img src="./assets/Account icon.svg" alt="Cable icon">
+            <h3 class="font-crimson-regular text-lg">Remove Language Barriers</h3>
+            <p class="font-dmsans-regular text-gray-500">Adapt to diverse markets with built-in localization for clear communication and enhanced user experience.</p>
+          </article>
+          <article class="space-y-3.5">
+            <img src="./assets/Chart icon.svg" alt="Cable icon">
+            <h3 class="font-crimson-regular text-lg">Visualize Growth</h3>
+            <p class="font-dmsans-regular text-gray-500">Generate precise, visually compelling reports that illustrate your growth trajectories across all regions.</p>
+          </article>
+        </div>
+
+        <div class="py-14 md:py-20">
+            <picture>
+              <source media="(min-width:600px)" srcset="./assets/snowy-mountain.avif" width="1920" height="1080">
+              <img src="./assets/Snowy-mobile.avif" alt="" width="300" height="600" class="w-full rounded-3xl">
+            </picture>
+        </div>
+      </section>
+
+
+
+
+      
 
     </main>
     <script type="module" src="./src/main.js"></script>
