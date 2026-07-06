@@ -21,6 +21,13 @@
     font-style: normal;
 }
 
+
+@font-face { 
+    font-family: "RobotoMono-Regular";
+    src: url("./fonts/RobotoMono-Regular.woff2") format("woff2"); 
+    font-display: swap;
+    font-style: normal;
+}
 @theme { 
     --color-green-600: #485C11; 
     --color-green-400: #8E9C78; 
@@ -32,6 +39,7 @@
     --font-dmsans-regular: "DMSansRegular"; 
     --font-dmsans-bold: "DMSansBold";
     --font-crimson-regular: "CrimsonRegular"; 
+    --font-roboto-regular: "RobotoMono-Regular"; 
 
     --animate-link1: slide-right 350ms ease-out; 
     --animate-link2: slide-right 400ms ease-out; 
