@@ -14,6 +14,13 @@
     font-style: normal;
 }
 
+@font-face{ 
+    font-family: "DMSansMedium";
+    src: url("./fonts/DMSans-Regular.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+}
+
 @font-face {
     font-family: "DMSansBold";
     src: url("./fonts/DMSans-Bold.woff2") format("woff2");
@@ -28,6 +35,21 @@
     font-display: swap;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "rethinkSans-medium";
+    src: url("./fonts/rethink-sans-latin-500-normal.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face{ 
+    font-family: "redditMono-medium";
+    src: url("./fonts/reddit-mono-latin-500-normal.woff2") format("woff2");
+    font-display: swap;
+    font-style: normal;
+}
+
 @theme { 
     --color-green-600: #485C11; 
     --color-green-400: #8E9C78; 
@@ -36,10 +58,13 @@
     --color-gray-500: #929292;
     --color-custom-black: #121212; 
 
-    --font-dmsans-regular: "DMSansRegular"; 
+    --font-dmsans-regular: "DMSansRegular";
+    --font-dmsans-medium: "DMSansMedium";  
     --font-dmsans-bold: "DMSansBold";
     --font-crimson-regular: "CrimsonRegular"; 
-    --font-roboto-regular: "RobotoMono-Regular"; 
+    --font-roboto-regular: "RobotoMono-Regular";
+    --font-rethink-medium: "rethinkSans-medium"; 
+    --font-reddit-medium: "redditMono-medium"; 
 
     --animate-link1: slide-right 350ms ease-out; 
     --animate-link2: slide-right 400ms ease-out; 

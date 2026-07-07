@@ -1,6 +1,7 @@
 const hamMenuEl = document.getElementById("hamMenu"); 
 const navBarEl = document.getElementById("navBar"); 
 const navMenu = document.getElementById("navMenu"); 
+const navLinks = document.getElementById("navLinks"); 
 
 hamMenuEl.addEventListener("click", (e) => { 
     navBarEl.classList.toggle("clicked"); 
@@ -12,8 +13,6 @@ hamMenuEl.addEventListener("click", (e) => {
     }
 })
 
-
-// Reading more about this depending on use case
 window.addEventListener('resize', (e) => { 
     if (window.innerWidth > 765) { 
         navMenu.style.height = 'fit-content'; 
@@ -24,6 +23,12 @@ window.addEventListener('resize', (e) => {
 })
 
 
+navLinks.addEventListener("click", (e) => { 
+    if (e.target.tagName === "A" || e.target.tagName === "LI") { 
+        navMenu.style.height = "0px"; 
+        navBarEl.classList.remove("clicked")
+    }
+})
 
 
 
