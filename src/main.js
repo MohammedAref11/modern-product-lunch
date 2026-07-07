@@ -24,9 +24,11 @@ window.addEventListener('resize', (e) => {
 
 
 navLinks.addEventListener("click", (e) => { 
-    if (e.target.tagName === "A" || e.target.tagName === "LI") { 
-        navMenu.style.height = "0px"; 
-        navBarEl.classList.remove("clicked")
+    if (window.innerWidth < 765) { 
+        if (e.target.tagName === "A" || e.target.tagName === "LI") { 
+            navMenu.style.height = "0px"; 
+            navBarEl.classList.remove("clicked")
+        }
     }
 })
 
