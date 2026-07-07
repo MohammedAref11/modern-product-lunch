@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Launch</title>
-    <script type="module" crossorigin src="/modern-product-lunch/assets/index-joRDo88D.js"></script>
-    <link rel="stylesheet" crossorigin href="/modern-product-lunch/assets/index-Br8Y7WDO.css">
+    <script type="module" crossorigin src="/modern-product-lunch/assets/index-CTZIM5gN.js"></script>
+    <link rel="stylesheet" crossorigin href="/modern-product-lunch/assets/index-Bz1PPoaK.css">
   </head>
   <body>
     <header class="md:relative max-w-[1600px] mx-auto max-md:sticky max-md:top-0 z-20 max-md:bg-white">
       <nav id="navBar" class="group px-6 py-5 flex flex-col md:flex-row items-center md:justify-between rounded-b-3xl max-md:shadow-sm">
         <div class="flex justify-between w-full md:w-auto">
-          <p class="font-dmsans-regular text-2xl cursor-pointer">Modern</p >
+          <p class="font-dmsans-medium text-2xl cursor-pointer">Area</p >
           <div id="hamMenu" class="flex flex-col justify-center gap-1 md:hidden">
             <span class="bg-custom-black w-5 h-0.5 inline-block group-[.clicked]:rotate-45 duration-200 group-[.clicked]:translate-y-3"></span>
             <span class="bg-custom-black w-5 h-0.5 inline-block group-[.clicked]:opacity-0 duration-200"></span>
@@ -19,11 +19,19 @@
           </div>
         </div>
         <div id="navMenu" class="w-full h-auto overflow-hidden max-md:h-0 duration-500 ease-out transition-[height] z-10 md:fixed md:left-2/4 md:bg-white/40 md:p-3 md:rounded-full md:-translate-x-3/6 md:w-auto">
-          <ul class="flex md:flex-row flex-col w-full max-md:py-5 p-2 font-dmsans-bold md:text-sm gap-4 max-md:*:border-b max-md:*:border-b-gray-100 max-md:*:py-3">
-            <li class="group-[.clicked]:animate-link1 cursor-pointer hover:text-gray-600">Benefits</li>
-            <li class="group-[.clicked]:animate-link2 cursor-pointer hover:text-gray-600">Specifications</li>
-            <li class="group-[.clicked]:animate-link3 cursor-pointer hover:text-gray-600">How-to</li>
-            <li class="group-[.clicked]:animate-link4 cursor-pointer hover:text-gray-600">Contact-Us</li>
+          <ul id="navLinks" class="flex md:flex-row flex-col w-full max-md:py-5 p-2 font-dmsans-bold md:text-sm gap-4 max-md:*:border-b max-md:*:border-b-gray-100 max-md:*:py-3">
+            <a href="#benefits">
+              <li class="group-[.clicked]:animate-link1 cursor-pointer hover:text-gray-600">Benefits</li>
+            </a>
+            <a href="#specs">
+              <li class="group-[.clicked]:animate-link2 cursor-pointer hover:text-gray-600">Specifications</li>
+            </a>
+            <a href="">
+              <li class="group-[.clicked]:animate-link3 cursor-pointer hover:text-gray-600">How-to</li>
+            </a>
+            <a href="">
+              <li class="group-[.clicked]:animate-link4 cursor-pointer hover:text-gray-600">Contact-Us</li>
+            </a>
           </ul> 
         </div>
         <button class="group/button md:flex text-white cursor-pointer hover:bg-green-400 duration-300 hidden group-[.clicked]:flex gap-2 font-dmsans-bold px-5 py-3 rounded-full self-start text-sm bg-green-600">
@@ -41,11 +49,11 @@
         <picture class="flex justify-center py-2">
           <source media="(min-width:1000px)" srcset="/modern-product-lunch/assets/Desktop-Hero-2Uf1heqs.webp" width="1000" height="600">
           <source media="(min-width:600px)" srcset="/modern-product-lunch/assets/Tablet-Hero-M06POjw0.webp" width="700" height="440">
-          <img fetchpriority="high" src="/modern-product-lunch/assets/Mobile-Hero-DAPsIMsy.webp" alt="" width="300" height="500">
+          <img src="/modern-product-lunch/assets/Mobile-Hero-DAPsIMsy.webp" alt="" width="300" height="500">
         </picture>
       </section>
 
-      <section id="benefits" class="px-8 py-4 border-b border-b-gray-200 ">
+      <section class="px-8 py-4 border-b border-b-gray-200 ">
         <p class="font-dmsans-regular text-gray-500 py-3">Trusted By:</p>
         <div class="flex flex-wrap justify-around w-full gap-2">
           <img class="p-4" src="data:image/png;base64,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" alt="">
@@ -57,13 +65,13 @@
         </div>
       </section>
 
-      <section class="px-8 py-12">
+      <section id="benefits" class="px-8 py-12">
         <p class="font-roboto-regular text-xs text-green-600">Benefits</p>
         <h2 class="py-8 font-crimson-regular text-5xl md:text-7xl lg:text-8xl">We’ve cracked the code.</h2>
         <p class="text-gray-600">Area provides real insights, without the data overload.</p>
       </section>
 
-      <section class="px-8 py-8">
+      <div class="px-8 py-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 *:py-4 *:border-t *:border-t-gray-100">
           <article class="space-y-3.5">
             <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2016%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M4.70203%202.3332C3.7887%203.2532%203.7887%204.7332%204.70203%205.64654L10.362%2011.2999C10.7487%2011.6932%2010.7487%2012.3332%2010.362%2012.7132C9.9687%2013.1065%209.33536%2013.1065%208.94203%2012.7132L6.11537%209.88654L6.82203%209.17987L4.4687%206.81987L4.2287%207.05987L3.2887%206.1132C3.0287%205.8532%202.6087%205.8532%202.33536%206.1132L1.40203%207.05987C1.14203%207.3332%201.14203%207.73987%201.40203%207.99987L2.33536%208.93987L2.1087%209.17987L4.4687%2011.5332L5.17536%2010.8265L8.00203%2013.6665C8.91536%2014.5665%2010.3887%2014.5665%2011.302%2013.6665C12.2154%2012.7465%2012.2154%2011.2665%2011.302%2010.3599L5.64203%204.69987C5.25536%204.30654%205.25536%203.66654%205.64203%203.28654C6.03536%202.8932%206.6687%202.8932%207.06203%203.28654L9.8887%206.1132L9.18203%206.81987L11.5354%209.17987L11.7754%208.93987L12.7154%209.88654C12.9754%2010.1465%2013.402%2010.1465%2013.6687%209.88654L14.602%208.93987C14.862%208.66654%2014.862%208.25987%2014.602%207.99987L13.6687%207.05987L13.8954%206.81987L11.5354%204.46654L10.8287%205.1732L8.00203%202.3332C7.0887%201.4332%205.61537%201.4332%204.70203%202.3332ZM1.87536%207.52654L2.81536%206.58654L3.76203%207.52654L2.81536%208.4732M12.242%208.4732L13.1887%207.52654L14.1287%208.4732L13.1887%209.4132L12.242%208.4732Z'%20fill='black'/%3e%3c/svg%3e" alt="Cable icon">
@@ -111,9 +119,9 @@
             <img src="data:image/avif;base64,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" alt="" class="rounded-4xl self-stretch h-full">
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="px-6 py-8 border-t border-t-gray-500">
+      <section id="specs" class="px-6 py-8 border-t border-t-gray-500">
         <div class="space-y-7 text-center">
           <p class="font-roboto-regular text-xs text-green-600">specs</p>
           <h2 class="font-crimson-regular text-4xl md:text-5xl lg:text-6xl">Why Choose Area</h2>
@@ -121,13 +129,56 @@
           <button class="font-dmsans-bold bg-green-100 rounded-full py-3 px-5 hover:bg-green-400 duration-300 hover:text-white cursor-pointer">Discover More</button>
         </div>
 
-        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 py-20 *:max-md:w-full">
+          <div class="rounded-3xl shadow-sm">
+            <h3 class="font-dmsans-medium text-3xl text-center py-10 border-b border-b-black">Area</h3>
+            <ul class="font-roboto-regular *:py-8 relative">
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Check-icon.svg)] before:px-5">Ultra-fast browsing</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Check-icon.svg)] before:px-5">Advanced AI insights</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Check-icon.svg)] before:px-5">Seamless integration</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Check-icon.svg)] before:px-5">Ultra-fast browsing</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Check-icon.svg)] before:px-5">Advanced AI insights</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Check-icon.svg)] before:px-5">Seamless integration</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-rethink-medium text-3xl text-center text-gray-500 py-10 border-b border-b-black">WebSurge</h3>
+            <ul class="font-roboto-regular *:py-8 relative">
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Check-icon.svg)] before:px-5">Ultra-fast browsing</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Check-icon.svg)] before:px-5">Advanced AI insights</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Check-icon.svg)] before:px-5">Seamless integration</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Close-icon.svg)] before:px-5">Ultra-fast browsing</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Check-icon.svg)] before:px-5">Advanced AI insights</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Close-icon.svg)] before:px-5">Seamless integration</li>
+            </ul>
+          </div>
+          <div class="md:col-span-2 lg:col-auto">
+            <h3 class="font-reddit-medium text-3xl text-gray-500 text-center py-10 border-b border-b-black">HyperView</h3>
+            <ul class="font-roboto-regular *:py-8 relative">
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Close-icon.svg)] before:px-5">Ultra-fast browsing</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Close-icon.svg)] before:px-5">Advanced AI insights</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Close-icon.svg)] before:px-5">Seamless integration</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Close-icon.svg)] before:px-5">Ultra-fast browsing</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Close-icon.svg)] before:px-5">Advanced AI insights</li>
+              <li class="border-b border-b-gray-100 before:content-[url(/assets/Close-icon.svg)] before:px-5">Seamless integration</li>
+            </ul>
+          </div>
+        </div>
 
-        
-
-
+        <div class="flex flex-col lg:flex-row lg:gap-12 gap-8 border-y border-y-gray-100">
+          <div class="lg:basis-[200%]">
+            <img src="/modern-product-lunch/assets/rocks-BN4WsO8f.avif" alt="" class="h-full object-cover rounded-3xl">
+          </div>
+          <div class="self-center lg:py-40 lg:px-16 space-y-8">
+          <h2 class="font-crimson-regular text-3xl md:text-4xl lg:text-5xl">“I was skeptical, but Area has completely transformed the way I manage my business. The data visualizations are so clear and intuitive, and the platform is so easy to use. I can't imagine running my company without it.”</h2>
+          <p class="font-dmsans-regular flex md:flex-col gap-3 text-lg max-md:items-center max-md:py-8">John Smith <span class="font-roboto-regular text-green-600 inline-block text-sm">Head of Data</span></p>
+          </div>
+        </div>
       </section>
 
+      <section>
+
+      </section>
     </main>
   </body>
 </html>
