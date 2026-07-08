@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview", 
     "predeploy": "npm run build", 
-    "deploy": "gh-pages -d dist -m \"added margin-inline:auto and width:full to how-to green moutain image\""
+    "deploy": "gh-pages -d dist -m \"finished styling footer section\""
   },
   "devDependencies": {
     "vite": "^8.1.1"
