@@ -25,7 +25,7 @@
             <a href="#specs">
               <li class="group-[.clicked]:animate-link2 cursor-pointer hover:text-gray-600">Specifications</li>
             </a>
-            <a href="">
+            <a href="#howTo">
               <li class="group-[.clicked]:animate-link3 cursor-pointer hover:text-gray-600">How-to</li>
             </a>
             <a href="">
@@ -129,7 +129,7 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 py-20 *:max-md:w-full">
-          <div class="rounded-3xl shadow-sm">
+          <div class="rounded-3xl shadow-sm md:col-span-2 lg:col-auto">
             <h3 class="font-dmsans-medium text-3xl text-center py-10 border-b border-b-black">Area</h3>
             <ul class="font-roboto-regular *:py-8 relative">
               <li class="border-b border-b-gray-100 before:content-[url(/assets/Check-icon.svg)] before:px-5">Ultra-fast browsing</li>
@@ -151,7 +151,7 @@
               <li class="border-b border-b-gray-100 before:content-[url(/assets/Close-icon.svg)] before:px-5">Seamless integration</li>
             </ul>
           </div>
-          <div class="md:col-span-2 lg:col-auto">
+          <div>
             <h3 class="font-reddit-medium text-3xl text-gray-500 text-center py-10 border-b border-b-black">HyperView</h3>
             <ul class="font-roboto-regular *:py-8 relative">
               <li class="border-b border-b-gray-100 before:content-[url(/assets/Close-icon.svg)] before:px-5">Ultra-fast browsing</li>
@@ -170,13 +170,45 @@
           </div>
           <div class="self-center lg:py-40 lg:px-16 space-y-8">
           <h2 class="font-crimson-regular text-3xl md:text-4xl lg:text-5xl">“I was skeptical, but Area has completely transformed the way I manage my business. The data visualizations are so clear and intuitive, and the platform is so easy to use. I can't imagine running my company without it.”</h2>
-          <p class="font-dmsans-regular flex md:flex-col gap-3 text-lg max-md:items-center max-md:py-8">John Smith <span class="font-roboto-regular text-green-600 inline-block text-sm">Head of Data</span></p>
+          <p class="font-dmsans-regular flex md:flex-col gap-3 text-lg max-md:items-center max-lg:py-8">John Smith <span class="font-roboto-regular text-green-600 inline-block text-sm">Head of Data</span></p>
           </div>
         </div>
       </section>
 
-      <section>
+      <section id="howTo" class="px-4 py-20">
+        <div class="flex flex-col md:flex-row items-center max-md:text-center gap-8 justify-between py-16">
+          <h2 class="font-crimson-regular text-5xl md:text-6xl lg:text-7xl">Map Your Success</h2>
+          <button class="font-dmsans-bold bg-green-100 rounded-full py-3 px-5 hover:bg-green-400 duration-300 hover:text-white cursor-pointer">Discover More</button>
+        </div>
 
+        <div class="py-16 flex md:justify-between gap-8 flex-col md:flex-row">
+          <div class="grid gap-4 max-md:text-center border-t border-t-gray-100 py-8">
+            <h3 class="font-dmsans-medium text-gray-500 text-7xl">01</h3>
+            <h4 class="font-crimson-regular text-3xl md:text-4xl">Get Started</h4>
+            <p class="font-dmsans-regular text-gray-500">With our intuitive setup, you’re up and running in minutes.</p>
+          </div>
+          <div class="grid gap-4 max-md:text-center border-t border-t-gray-100 py-8">
+            <h3 class="font-dmsans-medium text-gray-500 text-7xl">02</h3>
+            <h4 class="font-crimson-regular text-3xl md:text-4xl">Customize and Configure</h4>
+            <p class="font-dmsans-regular text-gray-500">Adapt Area to your specific requirements and preferences.</p>
+          </div>
+          <div class="grid gap-4 max-md:text-center border-t border-t-gray-100 py-8">
+            <h3 class="font-dmsans-medium text-gray-500 text-7xl">03</h3>
+            <h4 class="font-crimson-regular text-3xl md:text-4xl">Grow Your Business</h4>
+            <p class="font-dmsans-regular text-gray-500">Make informed decisions to exceed your goals.</p>
+          </div>          
+        </div>
+
+        <div class="py-8 border-b border-b-gray-100">
+          <picture>
+            <source media="(min-width: 600px)" srcset="./assets/green-mountain.avif">
+            <img src="./assets/green-moutain-mobile.avif" alt="" class="rounded-3xl">
+          </picture>
+        </div>
+      </section>
+
+      <section>
+        
       </section>
     </main>
     <script type="module" src="./src/main.js"></script>
