@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview", 
     "predeploy": "npm run build", 
-    "deploy": "gh-pages -d dist -m \"fixed navbar going invisible bug on desktop screen\""
+    "deploy": "gh-pages -d dist -m \"added margin-inline:auto and width:full to how-to green moutain image\""
   },
   "devDependencies": {
     "vite": "^8.1.1"
