@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,9 @@
     <header class="md:relative max-w-[1600px] mx-auto max-md:sticky max-md:top-0 z-20 max-md:bg-white">
       <nav id="navBar" class="group px-6 py-5 flex flex-col md:flex-row items-center md:justify-between rounded-b-3xl max-md:shadow-sm">
         <div class="flex justify-between w-full md:w-auto">
-          <p class="font-dmsans-medium text-2xl cursor-pointer">Area</p >
+          <a href="index.html">
+            <p class="font-dmsans-medium text-2xl cursor-pointer">Area</p> 
+          </a>
           <div id="hamMenu" class="flex flex-col justify-center gap-1 md:hidden">
             <span class="bg-custom-black w-5 h-0.5 inline-block group-[.clicked]:rotate-45 duration-200 group-[.clicked]:translate-y-3"></span>
             <span class="bg-custom-black w-5 h-0.5 inline-block group-[.clicked]:opacity-0 duration-200"></span>
@@ -28,7 +30,7 @@
             <a href="#howTo">
               <li class="group-[.clicked]:animate-link3 cursor-pointer hover:text-gray-600">How-to</li>
             </a>
-            <a href="">
+            <a href="#contactUs">
               <li class="group-[.clicked]:animate-link4 cursor-pointer hover:text-gray-600">Contact-Us</li>
             </a>
           </ul> 
@@ -42,35 +44,33 @@
       </nav>
     </header>  
     <main class="max-w-[1600px] mx-auto">
-
-      <section class="p-8">
+      <section id="hero" class="p-8 opacity-0 invisible duration-600 ease-in transform-[opacity]">
         <h1 class="font-crimson-regular md:text-[130px] sm:text-9xl text-6xl text-center">Browse Everything</h1>
         <picture class="flex justify-center py-2">
           <source media="(min-width:1000px)" srcset="./assets/Desktop-Hero.webp" width="1000" height="600">
           <source media="(min-width:600px)" srcset="./assets/Tablet-Hero.webp" width="700" height="440">
-          <img src="./assets/Mobile-Hero.webp" alt="" width="300" height="500">
+          <img fetchpriority="high" src="./assets/Mobile-Hero.webp" alt="" width="300" height="500">
         </picture>
-      </section>
-
-      <section class="px-8 py-4 border-b border-b-gray-200 ">
+      <div class="px-8 py-4 border-b border-b-gray-200 ">
         <p class="font-dmsans-regular text-gray-500 py-3">Trusted By:</p>
         <div class="flex flex-wrap justify-around w-full gap-2">
-          <img class="p-4" src="./assets/Logo-1.png" alt="">
-          <img class="p-4" src="./assets/Logo-2.png" alt="">
-          <img class="p-4" src="./assets/Logo-3.png" alt="">
-          <img class="p-4" src="./assets/Logo-4.png" alt="">
-          <img class="p-4" src="./assets/Logo-5b.png" alt="">
-          <img class="p-4" src="./assets/Logo-6b.png" alt="">
+          <img class="p-4" loading="lazy" src="./assets/Logo-1.png" alt="">
+          <img class="p-4" loading="lazy" src="./assets/Logo-2.png" alt="">
+          <img class="p-4" loading="lazy" src="./assets/Logo-3.png" alt="">
+          <img class="p-4" loading="lazy" src="./assets/Logo-4.png" alt="">
+          <img class="p-4" loading="lazy" src="./assets/Logo-5b.png" alt="">
+          <img class="p-4" loading="lazy" src="./assets/Logo-6b.png" alt="">
         </div>
+      </div>
       </section>
 
-      <section id="benefits" class="px-8 py-12">
+      <section id="benefits" class="px-6 py-12 opacity-0 duration-600 ease-in transform-[opacity]">
+        <div>
         <p class="font-roboto-regular text-xs text-green-600">Benefits</p>
         <h2 class="py-8 font-crimson-regular text-5xl md:text-7xl lg:text-8xl">We’ve cracked the code.</h2>
         <p class="text-gray-600">Area provides real insights, without the data overload.</p>
-      </section>
-
-      <div class="px-8 py-8">
+        </div>
+      <div class="px-8 py-20">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 *:py-4 *:border-t *:border-t-gray-100">
           <article class="space-y-3.5">
             <img src="./assets/Cable icon.svg" alt="Cable icon">
@@ -94,33 +94,34 @@
           </article>
         </div>
 
-        <div class="py-14 md:py-20">
+        <div class="py-6 md:py-20">
             <picture>
               <source media="(min-width:600px)" srcset="./assets/snowy-mountain.avif" width="1920" height="1080">
-              <img src="./assets/Snowy-mobile.avif" alt="" width="300" height="600" class="w-full rounded-3xl">
+              <img loading="lazy" src="./assets/Snowy-mobile.avif" alt="" width="300" height="600" class="w-full rounded-3xl">
             </picture>
         </div>
 
-        <div class="flex flex-col lg:flex-row lg:gap-10 py-10">
-          <div class="border-t border-t-gray-100 py-16 lg:basis-[80%]">
-            <h2 class="py-5 font-crimson-regular text-4xl md:text-5xl lg:text-6xl">See the Big Picture</h2>
-            <p class="font-dmsans-regular text-gray-600">Area turns your data into clear, vibrant visuals that show you exactly what's happening in each region.</p>
-            <ol class="py-10 *:py-5 font-dmsans-regular">
-              <li class="border-t border-t-gray-100 flex gap-6 py-8"><span class="font-dmsans-bold text-gray-500">01</span>Spot Trends in Seconds: No more digging through numbers.</li>
-              <li class="border-t border-t-gray-100 flex gap-6 py-8"><span class="font-dmsans-bold text-gray-500">02</span>Get Everyone on the Same Page: Share easy-to-understand reports with your team. </li>
-              <li class="border-t border-t-gray-100 flex gap-6 py-8"><span class="font-dmsans-bold text-gray-500">03</span>Make Presentations Pop: Interactive maps and dashboards keep your audience engaged.</li>
-              <li class="border-t border-t-gray-100 flex gap-6 py-8"><span class="font-dmsans-bold text-gray-500">04</span>Your Global Snapshot: Get a quick, clear overview of your entire operation.</li>
-            </ol>
-            <button class="font-dmsans-bold bg-green-100 rounded-full py-3 px-5 hover:bg-green-400 duration-300 hover:text-white cursor-pointer">Discover More</button>
-          </div>
-
-          <div class="">
-            <img src="./assets/rodion.avif" alt="" class="rounded-4xl self-stretch h-full">
+          <div class="flex flex-col lg:flex-row lg:gap-10 py-10">
+            <div class="border-t border-t-gray-100 py-16 lg:basis-[80%]">
+              <h2 class="py-5 font-crimson-regular text-4xl md:text-5xl lg:text-6xl">See the Big Picture</h2>
+              <p class="font-dmsans-regular text-gray-600">Area turns your data into clear, vibrant visuals that show you exactly what's happening in each region.</p>
+              <ol class="py-10 *:py-5 font-dmsans-regular">
+                <li class="border-t border-t-gray-100 flex gap-6 py-8"><span class="font-dmsans-bold text-gray-500">01</span>Spot Trends in Seconds: No more digging through numbers.</li>
+                <li class="border-t border-t-gray-100 flex gap-6 py-8"><span class="font-dmsans-bold text-gray-500">02</span>Get Everyone on the Same Page: Share easy-to-understand reports with your team. </li>
+                <li class="border-t border-t-gray-100 flex gap-6 py-8"><span class="font-dmsans-bold text-gray-500">03</span>Make Presentations Pop: Interactive maps and dashboards keep your audience engaged.</li>
+                <li class="border-t border-t-gray-100 flex gap-6 py-8"><span class="font-dmsans-bold text-gray-500">04</span>Your Global Snapshot: Get a quick, clear overview of your entire operation.</li>
+              </ol>
+              <button class="font-dmsans-bold bg-green-100 rounded-full py-3 px-5 hover:bg-green-400 duration-300 hover:text-white cursor-pointer">Discover More</button>
+            </div>
+            <div>
+              <img loading="lazy" src="./assets/rodion.avif" alt="" class="rounded-4xl self-stretch h-full">
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <section id="specs" class="px-6 py-8 border-t border-t-gray-500">
+
+      <section id="specs" class="px-6 py-8 border-t border-t-gray-500 opacity-0 transform-[opacity] duration-600 ease-in">
         <div class="space-y-7 text-center">
           <p class="font-roboto-regular text-xs text-green-600">specs</p>
           <h2 class="font-crimson-regular text-4xl md:text-5xl lg:text-6xl">Why Choose Area</h2>
@@ -166,7 +167,7 @@
 
         <div class="flex flex-col lg:flex-row lg:gap-12 gap-8 border-y border-y-gray-100">
           <div class="lg:basis-[200%]">
-            <img src="./assets/rocks.avif" alt="" class="h-full object-cover rounded-3xl">
+            <img loading="lazy" src="./assets/rocks.avif" alt="" class="h-full object-cover rounded-3xl">
           </div>
           <div class="self-center lg:py-40 lg:px-16 space-y-8">
           <h2 class="font-crimson-regular text-3xl md:text-4xl lg:text-5xl">“I was skeptical, but Area has completely transformed the way I manage my business. The data visualizations are so clear and intuitive, and the platform is so easy to use. I can't imagine running my company without it.”</h2>
@@ -175,7 +176,7 @@
         </div>
       </section>
 
-      <section id="howTo" class="px-4 py-20">
+      <section id="howTo" class="px-4 py-20 opacity-0 duration-600 ease-in transform-[opacity]">
         <div class="flex flex-col md:flex-row items-center max-md:text-center gap-8 justify-between py-16">
           <h2 class="font-crimson-regular text-5xl md:text-6xl lg:text-7xl">Map Your Success</h2>
           <button class="font-dmsans-bold bg-green-100 rounded-full py-3 px-5 hover:bg-green-400 duration-300 hover:text-white cursor-pointer">Discover More</button>
@@ -202,12 +203,12 @@
         <div class="py-8 border-b border-b-gray-100">
           <picture>
             <source media="(min-width: 600px)" srcset="./assets/green-mountain.avif">
-            <img src="./assets/green-moutain-mobile.avif" alt="" class="rounded-3xl mx-auto w-full">
+            <img loading="lazy" src="./assets/green-moutain-mobile.avif" alt="" class="rounded-3xl mx-auto w-full">
           </picture>
         </div>
       </section>
 
-      <section id="contactUs" class="py-20 border-b border-b-gray-100">
+      <section id="contactUs" class="py-20 border-b border-b-gray-100 opacity-0 duration-600 ease-in transform-[opacity]">
         <div class="flex flex-col px-10 gap-10 text-center">
           <h2 class="font-crimson-regular text-5xl md:text-6xl lg:text-7xl">Contact with us</h2>
           <p class="font-dmsans-medium text-gray-500 mx-auto md:w-3/4 lg:w-1/3">Schedule a quick call to learn how Area can turn your regional data into a powerful advantage.</p>
@@ -230,7 +231,7 @@
       <div class="flex justify-between gap-3.5 items-end pt-10">
         <img src="./assets/Footer-Icon.svg" alt="">
         <p class="font-roboto-regular text-sm text-green-600">@Arena 2025</p>
-        <p class="font-roboto-regular text-sm text-green-600">Designed By figma Community</p>
+        <p class="font-roboto-regular text-sm text-green-600">Designed By Figma Community</p>
       </div>
     </footer>
     <script type="module" src="./src/main.js"></script>

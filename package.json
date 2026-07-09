@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview", 
     "predeploy": "npm run build", 
-    "deploy": "gh-pages -d dist -m \"finished styling footer section\""
+    "deploy": "gh-pages -d dist -m \"change the text on the footer rights to Designed By Figma Community\""
   },
   "devDependencies": {
     "vite": "^8.1.1"

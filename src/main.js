@@ -33,5 +33,24 @@ navLinks.addEventListener("click", (e) => {
 })
 
 
+const sections = document.querySelectorAll("section"); 
 
+function callback(entries) { 
+  entries.forEach(entry => { 
+    if (entry.isIntersecting) { 
+        entry.target.classList.add("opacity-100", "visible")
+        observer.unobserve(entry.target)
+    }
+  })
+}
 
+const options = { 
+    rootMargin: "0px", 
+    threshold: 0.1
+}
+
+const observer = new IntersectionObserver(callback, options); 
+
+sections.forEach(sec => { 
+    observer.observe(sec)
+})
