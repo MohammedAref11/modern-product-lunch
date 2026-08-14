@@ -3,5 +3,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: "/modern-product-lunch", 
+  base: process.env.VITE_BASE_PATH || "/modern-product-lunch", 
 })
